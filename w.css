@@ -1,0 +1,112 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("weatherApp.jpg");
+    background-size: cover;
+
+}
+
+.container {
+    text-align: center;
+
+}
+
+.weather-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: 450px;
+    background: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)), url("weatherApp.jpg");
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    color: #fff;
+    border: 1px solid white;
+}
+
+.weather-card:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 10px rgb(184, 183, 183);
+}
+
+#city-input {
+    padding: 15px;
+    margin: 10px 0;
+    width: 70%;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 16px;
+    color: black;
+
+}
+
+#city-input:focus {
+    outline: none;
+    border-color: white;
+}
+
+#city-input::placeholder {
+    color: #aaa;
+}
+
+#city-input-btn {
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#city-input-btn:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+#weather-info {
+    display: none;
+}
+
+#weather-icon {
+    width: 100px;
+    height: 100px;
+}
+
+#temperature {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+#description {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#wind-speed {
+    font-size: 16px;
+    color: white;
+}
+
+#date {
+    font-size: 14px;
+    color: white;
+
+}
+
+h2 {
+    font-size: 48px;
+
+}
